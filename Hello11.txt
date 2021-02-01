@@ -1,0 +1,22 @@
+package PageObject;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PageObject {
+
+	//Initialize my objects in the Page
+	public PageObject(WebDriver driver){
+		PageFactory.initElements(driver, this);
+	}
+
+	//-------------Password Recovery English--------------------------------------
+
+	@FindBy(id = "uh-search-box")
+	public WebElement searchbox;
+
+
+}
